@@ -44,7 +44,8 @@
                 else if(chasoo[i] == 0) result += gyesoo[i];
             }
             if(result.length - result.lastIndexOf('+') == 2) result = result.substring(0, result.lastIndexOf('+')); //마지막 + 제거
-            document.write(result);
+            document.write("<h3>" + result + "</h3>");
+            document.write("<input type='button' value='다시하기' onclick='location.reload()'>");
         }
 
         var juckboon = function() {
@@ -60,7 +61,8 @@
             }
             if(result.length - result.lastIndexOf('+') == 2) result = result.substring(0, result.lastIndexOf('+')); //마지막 + 제거
             result += " + C";
-            document.write(result);
+            document.write("<h3>" + result + "</h3>");
+            document.write("<input type='button' value='다시하기' onclick='location.reload()'>");
         }
     </script>
 
